@@ -1,0 +1,29 @@
+{
+  "name": "goit-js-hw-11-countdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-11-countdown/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtabashniuk/goit-js-hw-11-countdown.git"
+  },
+  "keywords": [],
+  "author": "VT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vtabashniuk/goit-js-hw-11-countdown/issues"
+  },
+  "homepage": "https://github.com/vtabashniuk/goit-js-hw-11-countdown#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1"
+  }
+}
