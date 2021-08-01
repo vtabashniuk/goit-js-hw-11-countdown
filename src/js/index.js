@@ -72,7 +72,7 @@ function getDatePromise() {
     document.querySelector('.date-warning').textContent = '';
     const { value, valueAsNumber } = getTargetDate();
     value !== dateFormatType__YYYY_MM_DD(today)
-      ? resolve(valueAsNumber - 1000 * 60 * 22)
+      ? resolve(valueAsNumber)
       : reject((document.querySelector('.date-warning').textContent = 'Choose another DATE!'));
   });
 }
